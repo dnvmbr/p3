@@ -44,9 +44,10 @@ such as a page specific styesheets.
       <div class="col-md-8">
         @if(isset($results))
           @foreach($results as $user)
-            <!-- @foreach($user as $label => $data) -->
+            @foreach($user as $label => $data)
               <strong>{{$label}}:</strong> {{$data}} </br>
-            <!-- @endforeach -->
+            @endforeach
+            </br>
           @endforeach
         @endif
       </div>
