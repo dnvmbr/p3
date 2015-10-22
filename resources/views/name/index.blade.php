@@ -49,8 +49,6 @@ such as a page specific styesheets.
             <!-- @endforeach -->
           @endforeach
         @endif
-        <!-- {{ $request['email']}}
-        {{ print_r($data) }} -->
       </div>
     </div>
   </div>

@@ -60,7 +60,7 @@ class NameController extends Controller
         $results[] = $user;
       }
 
-      /// if data data address, ad that too...
+      /// if data address, ad that too...
 
       return View('name.index')->with(
         [
