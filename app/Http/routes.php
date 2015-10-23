@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/welcome');
 });
 
 Route::get('/lorem','LoremController@getIndex');
@@ -20,16 +20,3 @@ Route::post('/lorem','LoremController@postIndex');
 
 Route::get('/names','NameController@getIndex');
 Route::post('/names','NameController@postIndex');
-
-Route::get('/workspace',function() {
-  $faker = Faker\Factory::create();
-    echo $faker->name($gender = null|'male'|'female');
-    echo $faker->Address;
-    echo $faker->phoneNumber;
-    echo $faker->userName;
-    echo $faker->password;
-    echo $faker->freeEmail;
-
-
-
-});

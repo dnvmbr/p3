@@ -22,37 +22,38 @@ such as a page specific styesheets.
       <form method='POST' action='/names'>
         <input type='hidden' name='_token' value='{{ csrf_token() }}'>
         <label>Number Of People: <input type='number' name='person_count' value='{{ isset($request['person_count']) ? $request['person_count']: '5'}}'></br>
-        <label>Email <input type='checkbox' name='email' value='{{ isset($request['email']) ? $request['email']: ''}}'></label></br>
-        <label>Address <input type='checkbox' name='address' value='{{ isset($request['address']) ? $request['address']: ''}}'></label></br>
-        <label>Phone <input type='checkbox' name='phone' value='{{ isset($request['phone']) ? $request['phone']: ''}}'></label></br>
-        <label>Username <input type='checkbox' name='username' value='{{ isset($request['username']) ? $request['username']: ''}}'></label></br>
-        <label>Password <input type='checkbox' name='password' value='{{ isset($request['password']) ? $request['password']: ''}}'></label></br>
+        <label>Email <input type='checkbox' name='email' value='true' {{ isset($request['email']) && $request['email'] == true ? 'checked' : '' }}></label></br>
+        <label>Address <input type='checkbox' name='address' value='true' {{ isset($request['address']) && $request['address'] == true ? 'checked' : '' }}></label></br>
+        <label>Phone <input type='checkbox' name='phone' value='true' {{ isset($request['phone']) && $request['phone'] == true ? 'checked' : '' }}></label></br>
+        <label>Username <input type='checkbox' name='username' value='true' {{ isset($request['username']) && $request['username'] == true ? 'checked' : '' }}></label></br>
+        <label>Password <input type='checkbox' name='password' value='true'{{ isset($request['password']) && $request['password'] == true ? 'checked' : '' }}></label></br>
         @if(count($errors) > 0)
           <div class="alert alert-danger">
             <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
+              @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+              @endforeach
             </ul>
           </div>
         @endif
-
         <input class='btn btn-default' type='submit' value='Submit'>
       </form>
     </div>
-    <div class="col-md-4">
-      <div class="col-md-8">
-        @if(isset($results))
-          @foreach($results as $user)
+
+    <div class="col-md-8">
+      @if(isset($results))
+        @foreach($results as $user)
+          <table>
             @foreach($user as $label => $data)
-              <strong>{{$label}}:</strong> {{$data}} </br>
+              <tr><td><strong>{{$label}}: </strong></td><td> {{$data}} </td></tr>
             @endforeach
-            </br>
-          @endforeach
-        @endif
-      </div>
+          </table></br>
+        @endforeach
+      @endif
     </div>
+    
   </div>
+
 @stop
 
 {{--
