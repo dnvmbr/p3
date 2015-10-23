@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>
-        @yield('title','P3')
+        @yield('title','P 3 AWESOME 3')
     </title>
 
     <meta charset='utf-8'>
@@ -20,7 +20,7 @@
 
     <header>
         <div>
-          <a href='/'><h1>Hai fraaaaands, welcome to p3!</h1></a>
+          <a href='/'><h1>Hai fraaaaands, welcome to P3 Awesome3!</h1></a>
           <a class="btn btn-warning" href="/lorem" role="button">Generate some Lorem Ipsum!</a>
           <a class="btn btn-warning" href="/names" role="button">Generate some fake names</a>
         </div>

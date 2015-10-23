@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 
-@section('title', $title='Generate Some fake names!')
+@section('title', $title='P3 Awesome3!')
 
 {{--
 This `head` section will be yielded right before the closing </head> tag.

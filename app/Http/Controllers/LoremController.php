@@ -22,7 +22,7 @@ class LoremController extends Controller
     public function postIndex(Request $request)
     {
       $this->validate($request, [
-        'para_num' => 'required|numeric',
+        'para_num' => 'required|numeric|max:9',
       ]);
 
       $data = $request->all();
