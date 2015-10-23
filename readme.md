@@ -44,3 +44,4 @@ External Sources Used:
 + Faker to generate fake information for accounts
 + Badcow for the lorem ipsum
 + Google to fix my stoopidness
++ Nyancat I found on codepen from [this guy](http://codepen.io/brunorcunha/pen/wikEI#0) 

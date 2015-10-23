@@ -15,8 +15,10 @@ such as a page specific styesheets.
 @section('content')
 
     <div class='welcomeDiv'>
-      <h3>^^^oh herro, click on one of the links above to get started!^^^<h3>
+      <h3>^^^oh herro, click on one of the buttons above to get started!^^^<h3>
+      <h4>or just play with nyan cat!</h4>
     </div>
+    <div class="nyan"></div>
 @stop
 
 {{--
@@ -25,5 +27,6 @@ Use it to add specific things that *this* View needs at the end of the body,
 such as a page specific JavaScript files.
 --}}
 @section('body')
+<script src="/functions.js"></script>
 
 @stop
