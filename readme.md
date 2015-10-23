@@ -25,3 +25,22 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+
+
+
+##  Dan's Notes
+[Live Demo](p3.dannovember.me)
+
+Howdy! The landing page prompts you to create fake accounts or Lorem Ipsum paragraphs! Either option provides the selections on the left hand side and after hitting submit/generate the requested information appears on the right retaining the information entered on the left.
+
+[Screencast Demo](youtube or something)
+
+There are no special requirements for the app, except for Dan to know that I thought about how awesome cat's are while I built this site.
+
+External Sources Used:
+
++ Bootstrap for css
++ Faker to generate fake information for accounts
++ Badcow for the lorem ipsum
++ Google to fix my stoopidness
